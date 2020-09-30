@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+.Home {
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+  background-color: rgb(233, 233, 233);
+}
+.container {
+  padding: 0 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  width: 100px;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(12, 114, 182);
 }
 
-.App-header {
-  background-color: #282c34;
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4c5a67;
+}
+
+/* Landing */
+.Landing {
+  display: flex;
+}
+.landing-left {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-text {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.hero-sub-text {
+  font-size: 1.4rem;
+  color: #4c5a67;
+}
+.landing-btns {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.btn {
+  border: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-primary {
+  border: 1px solid #107dd1e7;
+}
+.btn-secondary {
+  color: #107ddd;
+}
+.landing-right {
+  width: 50%;
+}
+
+.landing-right img {
+  width: 100%;
+}
+
+.primary-bg {
+  background-color: #107ddd;
+}
+
+/* Cartoon */
+.Cartoon {
+  padding-top: 5rem;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Cartoon img {
+  width: 80%;
+}
+/* Cardlist */
+.CardList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  height: 90vh;
+}
+/* Card */
+.Card {
+  background-color: white;
+  flex: 0 0 400px;
+  padding: 20px;
+  border: 1px solid #c0c3c570;
+
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  line-height: 1.5rem;
+  margin: 1rem 1rem;
+  transition: 0.3s all ease-in-out;
+}
+.Card:hover {
+  cursor: pointer;
+  border: 1px solid #bcbdbeb4;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.card-description {
+  color: #4c5a67;
+}
+/* Tab Nav */
+.TabNav {
   min-height: 100vh;
+}
+.TabNav h2 {
+  font-size: 2rem;
+}
+
+.TabNav p {
+  font-size: 1.1rem;
+  color: #4c5a67;
+  display: flex;
+}
+
+.nav-tab {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #88898a65;
+  color: #1b1b1b;
+}
+.tab {
+  padding: 10px;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+  font-weight: 500;
+}
+.tab:hover {
+  color: #107ddd;
+}
+.active {
+  border-bottom: 3px solid #107ddd;
+}
+.tab-image {
+  width: 100%;
+}
+.tab-image img {
+  padding: 30px;
+  width: 100%;
+}
+/* Team */
+.Team {
+  min-height: 100vh;
+}
+.team-image {
+  width: 100%;
+}
+.team-image img {
+  width: 100%;
+}
+.team-title {
+  font-size: 2rem;
+}
+.team-description {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #4c5a67;
+}
+
+/* Download */
+.Download {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background-color: #bebebe6e;
+  min-height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
+.download-text-heading {
+  font-size: 2rem;
+  margin: 0;
+}
+.download-text-description {
+  font-size: 1.1rem;
+  color: #4c5a67;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-subs-desc {
+  font-size: 0.7rem;
+  color: #4c5a67;
+}
+
+/* Footer */
+.Footer {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 3rem;
+}
+.footer-logo {
+  width: 100%;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-footer-nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.left-footer-nav a {
+  text-decoration: none;
+  color: #4c5a67;
+  font-weight: 500;
+}
+
+.left-footer-nav a:hover {
+  color: #107ddd;
+}
+.right-footer-nav {
+  display: flex;
+  width: 11%;
+  justify-content: space-between;
+}
+.footer-social-logo {
+  width: 30px;
 }
